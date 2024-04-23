@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    .darken-image {
+      filter: brightness(50%);
+    }
+
+    .center_text {
+      top: 50%;
+      right: 60%;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body class="bg-info-subtle ">
+
+  <!--Navbar strt-->
+  <nav class="navbar navbar-expand-lg bg-warning-subtle  ">
+    <div class="container">
+      <a class="navbar-brand fw-bold fst-italic text-dark" href="index.html">
+        <img src="img/cakes.png" height="50" width="50">
+        &nbsp; CAKE-LAND
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active bg-danger border border-2 border-secondary-subtle fw-semibold  shadow-lg rounded-pill text-center ps-4 pe-4 text-black m-2 "
+              aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active bg-danger border border-2 border-secondary-subtle fw-semibold  shadow-lg rounded-pill text-center ps-4 pe-4 text-black m-2 "
+              aria-current="page" href="shop.html">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active bg-danger border border-2 border-secondary-subtle fw-semibold  shadow-lg rounded-pill text-center ps-4 pe-4 text-black m-2 "
+              aria-current="page" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active bg-danger border border-2 border-secondary-subtle fw-semibold  shadow-lg rounded-pill text-center ps-4 pe-4 text-black m-2 "
+              aria-current="page" href="about.html">About Us</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active bg-danger border border-2 border-secondary-subtle fw-semibold  shadow-lg rounded-pill text-center ps-4 pe-4 text-black m-2 "
+              data-bs-toggle="modal" data-bs-target="#login" aria-current="page" href="#"> Login </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar end-->
+
+  <!-- Login Modal -->
+  <div class="modal" id="login">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info-subtle  ">
+          <h1 class="modal-title fs-5 fw-bolder " id="staticBackdropLabel">Login !</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="m-1 ">
+              <label class="form-label">Email</label>
+              <input type="email" placeholder="joy@p4n.in" class="form-control">
+            </div>
+            <div class="m-1 ">
+              <label class="form-label">Password</label>
+              <input type="password" placeholder="123QWE!@#" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer bg-info-subtle ">
+
+          <button type="button" class="btn btn-danger border-2 border-light ">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--login end-->
+
+
+  <!--start Carousel shop banner section -->
+
+  <div id="carouselExampleCaptions" class="carousel slide mt-4">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/carousel01.jpg" class="d-block w-100 darken-image  " alt="..." height="500">
+        <div class="carousel-caption d-none d-md-block center_text">
+          <h2 class="text-center text-decoration-underline fst-italic "> CAKES <i class="bi bi-balloon-heart"></i> </h2>
+          <h6 class="text-center mt-4">Any celebration, whether a cozy gathering or an extravagent party, is incomplete
+            without cake! We offer a wide range of handcrafted speciality cakes that are a treat to the eyes and also
+            the taste buds.</h6>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel02.jpg" class="d-block w-100 darken-image" alt="..." height="500">
+        <div class="carousel-caption d-none d-md-block center_text ">
+          <h2 class="text-center text-decoration-underline fst-italic "> PASTRIES <i class="bi bi-balloon-heart"></i>
+          </h2>
+          <h6 class="text-center mt-4">Any celebration, whether a cozy gathering or an extravagent party, is incomplete
+            without cake! We offer a wide range of handcrafted speciality cakes that are a treat to the eyes and also
+            the taste buds.</h6>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel03.jpg" class="d-block w-100 darken-image" alt="..." height="500">
+        <div class="carousel-caption d-none d-md-block center_text">
+          <h2 class="text-center text-decoration-underline fst-italic "> CUPCAKES <i class="bi bi-balloon-heart"></i>
+          </h2>
+          <h6 class="text-center mt-4">Any celebration, whether a cozy gathering or an extravagent party, is incomplete
+            without cake! We offer a wide range of handcrafted speciality cakes that are a treat to the eyes and also
+            the taste buds.</h6>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--End Carousel shop banner section -->
+
+  <!--- start cards section -->
+  <!--Cake section starts-->
+
+  <div class="container ">
+
+
+    <h3 class="text-warning-emphasis fst-italic text-decoration-underline m-3 text-center" id="list-item-1"> CAKES </h3>
+
+    <div class="row ">
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cake_00.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Smiley Cake</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5 ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cake_02.jpg" class="card-img-top  " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5 ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cake_03.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cake_04.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_05.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+
+                <div class="d-flex justify-content-around mt-5 ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_06.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_07.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+
+
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_08.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_13.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+
+
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_14.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_15.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card cards">
+            <img src="img/cakes/cake_16.jpg" class="card-img-top " height="250" width="130">
+            <figcaption>
+              <div class="card-body">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Cakes section ends-->
+    <hr class="mt-5 ">
+
+    <!--Pastries Section starts-->
+
+    <h3 class="text-warning-emphasis fst-italic text-decoration-underline text-center" id="list-item-2"> PASTRIES </h3>
+
+
+    <div class="row mt-4">
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_05.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5 ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_06.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_07.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5 ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_08.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5 ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_09.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_10.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_11.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/pastry_12.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+              <div class="d-flex justify-content-around mt-5 ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <!--Pastries Section ends-->
+    <hr class="mt-5 ">
+    <!--Cupcake section starts -->
+
+    <h3 class="text-warning-emphasis fst-italic text-decoration-underline text-center" id="list-item-3"> CUPCAKES </h3>
+
+    <div class="row mt-4">
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_01.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_02.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_03.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_04.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex justify-content-around mt-5  ">
+                  <h3 class="align-content-center ">120 $</h3>
+                  <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+                </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_05.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_06.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_07.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/cup_08.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <!--Cupcake section ends-->
+    <hr class="mt-5 ">
+
+    <!--Accessories section starts-->
+    <h3 class="text-warning-emphasis fst-italic text-decoration-underline text-center" id="list-item-4"> ACCESSOIRES
+    </h3>
+
+    <div class="row mt-4">
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_01.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_02.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_03.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_04.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_05.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_06.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_07.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card cards">
+          <img src="img/cakes/access_08.jpg" class="card-img-top " height="250" width="130">
+          <figcaption>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <div class="d-flex justify-content-around mt-5  ">
+                <h3 class="align-content-center ">120 $</h3>
+                <a href="#" class="btn btn-outline-danger  ">Buy Now <i class="bi bi-cart-check-fill"></i></a>
+              </div>
+            </div>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <!--Accessories section ends-->
+
+  </div>
+  </div>
+
+
+
+  <!--End cards section-->
+
+
+  <!-- start footer section  -->
+  <div class="container-fluid mt-5 bg-warning-subtle  ">
+    <div class="row  ">
+      <div class="col-sm-3 ">
+        <h4 class="text-decoration-underline mb-3 mt-3 "> OUR STORES - </h4>
+        <p class="fw-semibold "> Mumbai | Navi Mumbai | Thane | Delhi | Noida | Ghaziabad | Gurgaon | Faridabad |
+          Bengaluru | Hyderabad | Pune | Chandigarh-Mohali | Chennai | Nashik | Surat | Mysore | Nagpur | Jaipur | Agra
+          | Lucknow | Vadodara | Dehradun | Meerut </p>
+      </div>
+      <div class="col-sm-6 mt-3 ">
+        <h4 class="text-center ">Cake-Land <i class="bi bi-cake-fill"></i></h4>
+        <p class="text-center mb-0 mt-1 ">We send LOVE and cakes !</p>
+        <p class="text-center ">Fresh products baked freshly, delivered directly to your front door, daily.</p>
+
+        <h4 class="text-center ">Spread The Love On Social Media</h4>
+        <div class="text-center ">
+          <img src="img/instagram.png" width="40" height="40" class="m-2">
+          <img src="img/facebook.png" width="40" height="40" class="m-2  ">
+          <img src="img/twitter.png" width="40" height="40" class="m-2 ">
+          <img src="img/youtube.png" width="40" height="40" class="m-2 ">
+        </div>
+
+      </div>
+      <div class="col-sm-3 ">
+        <h3 class="text-center mt-3 "> Contact Information </h3>
+        <p class="text-center fw-semibold mb-0 "> +91 9819935135 </p>
+        <p class="text-center fw-semibold mb-0"> Available from 9am - 10pm </p>
+        <p class="text-center fw-semibold"> Mon-Sun </p>
+        <p class="text-center fw-semibold mt-5">Copyright. 2024. FA GIFTS PVT. LTD</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- End of footer section  -->
+
+
+
+</body>
+
+</html>

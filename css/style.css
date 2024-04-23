@@ -1,0 +1,108 @@
+a {
+   text-decoration: none !important; 
+   color: black !important;
+}
+
+:root {
+   --white: #ffffff;
+   --offset: 1rem;
+}
+
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.cards {
+   position: relative;
+   overflow: hidden;
+   max-width: 18rem;
+   width: 100%;
+   color: #ffffff;
+   background: #000;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.cards img {
+   max-width: 100%;
+   object-fit: cover;
+   backface-visibility: hidden;
+   vertical-align: top;
+   transition: all 0.3s ease;
+}
+
+.cards figcaption {
+   position: absolute;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   max-width: 20rem;
+   width: 100%;
+   transform: translateY(-50%) translateX(-50%);
+}
+
+.cards h3 {
+   font-size: 1.1rem;
+   font-weight: bold;
+   opacity: 0;
+   margin-bottom: 0.5rem;
+   letter-spacing: 0.1rem;
+   transition: all 0.4s ease;
+}
+
+.cards p {
+   opacity: 0;
+   font-size: 0.8rem;
+   transition: all 0.4s ease;
+}
+.cards a {
+   font-size: 1.1rem;
+   font-weight: bold;
+   opacity: 0;
+   margin-bottom: 0.5rem;
+   letter-spacing: 0.1rem;
+   transition: all 0.4s ease;
+}
+
+.cards:hover img {
+   zoom: 1;
+   filter: alpha(opacity=20);
+   opacity: 0.3;
+}
+
+.cards:hover .corner::before {
+   width: 40px;
+   opacity: 1;
+   transition-delay: 0.2s;
+}
+
+.cards:hover .corner::after {
+   height: 40px;
+   opacity: 1;
+   transition-delay: 0.2s;
+}
+
+.cards :hover h3 {
+   opacity: 1;
+   transition-delay: 0.3s;
+}
+
+.cards :hover p {
+   opacity: 1;
+   transition-delay: 0.35s;
+}
+.cards :hover a {
+   opacity: 1;
+   transition-delay: 0.35s;
+}
+
+
+
+ 
